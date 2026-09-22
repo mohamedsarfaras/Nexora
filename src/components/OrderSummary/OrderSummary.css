@@ -1,4 +1,4 @@
-﻿.osum { padding: 26px; border-radius: var(--radius-lg); display: flex; flex-direction: column; gap: 14px; position: sticky; top: calc(var(--nav-h) + 20px); }
+.osum { padding: 26px; border-radius: var(--radius-lg); display: flex; flex-direction: column; gap: 14px; position: sticky; top: calc(var(--nav-h) + 20px); }
 .osum__title { font-size: 1.15rem; font-weight: 800; }
 .osum__items { color: var(--text-3); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
 .osum__rows { display: flex; flex-direction: column; gap: 10px; margin-top: 6px; }

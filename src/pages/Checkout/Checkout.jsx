@@ -1,5 +1,5 @@
-﻿import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { useShop } from "../../context/ShopContext";
 import OrderSummary from "../../components/OrderSummary/OrderSummary";
 import { getShippingCost, generateOrderId, estimatedDelivery, formatPrice } from "../../utils/helpers";
@@ -13,7 +13,6 @@ const INITIAL_FORM = {
 };
 
 const Checkout = () => {
-  const navigate = useNavigate();
   const { cart, cartSubtotal, clearCart, showToast } = useShop();
   const [form, setForm] = useState(INITIAL_FORM);
   const [errors, setErrors] = useState({});

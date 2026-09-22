@@ -1,4 +1,4 @@
-﻿.shop { padding: 40px 0 80px; }
+.shop { padding: 40px 0 80px; }
 .shop__header { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-bottom: 36px; }
 .shop__searchWrap { min-width: 280px; max-width: 420px; flex: 1; }
 .shop__layout { display: grid; grid-template-columns: 280px 1fr; gap: 28px; align-items: start; }

@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import "./SearchBar.css";
 
 const SearchBar = ({ value, onChange, placeholder = "Search products..." }) => {

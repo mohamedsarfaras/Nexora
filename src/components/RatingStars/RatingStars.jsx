@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 
 const RatingStars = ({ rating = 0, reviews = null, size = "sm" }) => {
   const full = Math.floor(rating);

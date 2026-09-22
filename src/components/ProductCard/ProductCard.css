@@ -1,4 +1,4 @@
-﻿.pcard { display: flex; flex-direction: column; border-radius: var(--radius-lg); background: var(--bg-glass); border: 1px solid var(--border-soft); backdrop-filter: blur(12px); overflow: hidden; transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease; height: 100%; }
+.pcard { display: flex; flex-direction: column; border-radius: var(--radius-lg); background: var(--bg-glass); border: 1px solid var(--border-soft); backdrop-filter: blur(12px); overflow: hidden; transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease; height: 100%; }
 .pcard:hover { transform: translateY(-6px); border-color: rgba(0, 255, 178, 0.35); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(0, 255, 178, 0.15); }
 .pcard__imgWrap { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: var(--bg-2); display: block; }
 .pcard__imgWrap img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }

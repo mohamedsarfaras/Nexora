@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useShop } from "../../context/ShopContext";
 import { calcDiscount, formatPrice } from "../../utils/helpers";

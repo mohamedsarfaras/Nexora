@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import { categories } from "../../data/products";
 import "./FilterPanel.css";
 

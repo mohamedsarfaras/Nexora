@@ -1,4 +1,4 @@
-﻿.hero { position: relative; overflow: hidden; padding: 60px 0 90px; }
+.hero { position: relative; overflow: hidden; padding: 60px 0 90px; }
 .hero__bg { position: absolute; inset: 0; background: radial-gradient(900px 500px at 20% 20%, rgba(0, 255, 178, 0.10), transparent 60%), radial-gradient(900px 500px at 90% 60%, rgba(162, 89, 255, 0.15), transparent 60%); z-index: 0; }
 .hero__glow { position: absolute; border-radius: 50%; filter: blur(90px); opacity: 0.35; z-index: 0; pointer-events: none; }
 .hero__glow--1 { width: 400px; height: 400px; background: var(--neon); top: -120px; left: -120px; }

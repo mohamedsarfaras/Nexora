@@ -1,4 +1,4 @@
-﻿/* NEXORA Helpers */
+/* NEXORA Helpers */
 export const formatPrice = (n) => `$${Number(n || 0).toFixed(2)}`;
 
 export const calcDiscount = (original, price) => {

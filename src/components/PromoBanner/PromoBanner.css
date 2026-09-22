@@ -1,4 +1,4 @@
-﻿.promo { padding: 20px 0 60px; }
+.promo { padding: 20px 0 60px; }
 .promo__inner {
   position: relative; display: flex; align-items: center; justify-content: space-between;
   gap: 30px; padding: 48px 56px; border-radius: var(--radius-xl);

@@ -1,3 +1,3 @@
-﻿.home__sectionHead { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 32px; flex-wrap: wrap; }
+.home__sectionHead { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 32px; flex-wrap: wrap; }
 .home__viewAll { font-size: 0.75rem; padding: 10px 20px; }
 .home__cats { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 18px; }

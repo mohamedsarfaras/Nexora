@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import { Offcanvas } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useShop } from "../../context/ShopContext";

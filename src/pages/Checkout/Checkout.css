@@ -1,4 +1,4 @@
-﻿.checkout { padding: 40px 0 80px; }
+.checkout { padding: 40px 0 80px; }
 .checkout__header { margin-bottom: 32px; }
 .checkout__layout { display: grid; grid-template-columns: 1fr 380px; gap: 28px; align-items: start; }
 .checkout__form { display: flex; flex-direction: column; gap: 22px; }

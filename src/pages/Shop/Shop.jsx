@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import products, { categories } from "../../data/products";
 import SearchBar from "../../components/SearchBar/SearchBar";

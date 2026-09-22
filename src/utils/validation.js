@@ -1,4 +1,4 @@
-﻿/* NEXORA Form Validation */
+/* NEXORA Form Validation */
 export const isEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test((v || "").trim());
 export const isPhone = (v) => /^[0-9+\-\s()]{7,15}$/.test((v || "").trim());
 export const isPostal = (v) => /^[A-Za-z0-9\-\s]{3,10}$/.test((v || "").trim());
