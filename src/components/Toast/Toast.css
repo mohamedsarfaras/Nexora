@@ -1,0 +1,27 @@
+﻿.nexora-toast {
+  position: fixed; right: 24px; bottom: 24px; z-index: 9999;
+  display: flex; align-items: center; gap: 12px;
+  padding: 14px 20px; min-width: 240px; max-width: 360px;
+  border-radius: var(--radius-md); background: var(--bg-2);
+  border: 1px solid var(--border-strong);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  animation: toastIn 0.3s ease both; font-weight: 600;
+}
+@keyframes toastIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.nexora-toast__icon {
+  display: grid; place-items: center; width: 26px; height: 26px;
+  border-radius: 50%; font-weight: 800; color: #05060a; flex-shrink: 0;
+}
+.nexora-toast--success { border-color: rgba(0, 255, 178, 0.5); box-shadow: 0 0 24px rgba(0, 255, 178, 0.25); }
+.nexora-toast--success .nexora-toast__icon { background: var(--neon); }
+.nexora-toast--error { border-color: rgba(255, 77, 109, 0.5); box-shadow: 0 0 24px rgba(255, 77, 109, 0.25); }
+.nexora-toast--error .nexora-toast__icon { background: var(--danger); }
+.nexora-toast--info { border-color: rgba(162, 89, 255, 0.5); box-shadow: 0 0 24px rgba(162, 89, 255, 0.25); }
+.nexora-toast--info .nexora-toast__icon { background: var(--purple); }
+.nexora-toast__msg { color: var(--text-1); font-size: 0.9rem; }
+@media (max-width: 576px) {
+  .nexora-toast { right: 12px; left: 12px; bottom: 12px; max-width: none; }
+}

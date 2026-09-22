@@ -1,0 +1,20 @@
+﻿.wl-offcanvas { width: 400px !important; max-width: 92vw; }
+.wl-offcanvas .offcanvas-header { border-bottom: 1px solid var(--border-soft); }
+.wl-offcanvas .offcanvas-title { font-family: "Orbitron", sans-serif; font-weight: 800; font-size: 1.15rem; color: var(--text-1); }
+.wl-count { color: var(--text-3); font-weight: 600; font-size: 0.9rem; }
+.wl-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 60px 20px; gap: 12px; }
+.wl-empty > span { font-size: 3.5rem; color: var(--pink); filter: drop-shadow(0 0 20px rgba(255, 78, 205, 0.5)); }
+.wl-empty h5 { font-size: 1.1rem; }
+.wl-empty p { color: var(--text-3); margin-bottom: 8px; }
+.wl-list { display: flex; flex-direction: column; gap: 14px; }
+.wl-item { display: flex; gap: 14px; padding: 12px; border-radius: var(--radius-md); background: var(--bg-2); border: 1px solid var(--border-soft); transition: border-color 0.2s ease; }
+.wl-item:hover { border-color: rgba(0, 255, 178, 0.3); }
+.wl-item img { width: 76px; height: 76px; object-fit: cover; border-radius: var(--radius-sm); cursor: pointer; flex-shrink: 0; }
+.wl-item__info { flex: 1; display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.wl-item__info h6 { font-family: "Orbitron", sans-serif; font-size: 0.85rem; font-weight: 700; line-height: 1.3; cursor: pointer; color: var(--text-1); transition: color 0.2s ease; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.wl-item__info h6:hover { color: var(--neon); }
+.wl-item__price { font-weight: 700; color: var(--neon); font-size: 0.95rem; }
+.wl-item__actions { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
+.wl-item__add { padding: 6px 12px; font-size: 0.7rem; }
+.wl-item__remove { width: 30px; height: 30px; border-radius: 50%; background: rgba(255, 77, 109, 0.1); border: 1px solid rgba(255, 77, 109, 0.3); color: var(--danger); font-size: 1.1rem; line-height: 1; display: grid; place-items: center; transition: all 0.2s ease; }
+.wl-item__remove:hover { background: rgba(255, 77, 109, 0.2); }

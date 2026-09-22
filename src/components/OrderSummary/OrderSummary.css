@@ -1,0 +1,12 @@
+﻿.osum { padding: 26px; border-radius: var(--radius-lg); display: flex; flex-direction: column; gap: 14px; position: sticky; top: calc(var(--nav-h) + 20px); }
+.osum__title { font-size: 1.15rem; font-weight: 800; }
+.osum__items { color: var(--text-3); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+.osum__rows { display: flex; flex-direction: column; gap: 10px; margin-top: 6px; }
+.osum__row { display: flex; justify-content: space-between; font-size: 0.92rem; color: var(--text-2); }
+.osum__row span:last-child { color: var(--text-1); font-weight: 600; }
+.osum__row--discount span:last-child { color: var(--neon); }
+.osum__row--discount em { font-style: normal; color: var(--neon); font-size: 0.78rem; font-weight: 600; }
+.osum__divider { height: 1px; background: var(--border-soft); margin: 8px 0; }
+.osum__total { display: flex; justify-content: space-between; align-items: center; font-family: "Orbitron", sans-serif; font-size: 1.25rem; font-weight: 800; }
+.osum__actions { margin-top: 10px; display: flex; flex-direction: column; gap: 10px; }
+.osum__actions .btn-nexora, .osum__actions .btn-ghost { width: 100%; }

@@ -1,0 +1,11 @@
+﻿.fpanel { padding: 24px; border-radius: var(--radius-lg); display: flex; flex-direction: column; gap: 24px; position: sticky; top: calc(var(--nav-h) + 20px); }
+.fpanel__head { display: flex; justify-content: space-between; align-items: center; }
+.fpanel__head h5 { font-size: 1.1rem; font-weight: 800; }
+.fpanel__count { font-size: 0.75rem; color: var(--text-3); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+.fpanel__group h6 { font-family: "Orbitron", sans-serif; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-2); margin-bottom: 14px; }
+.fpanel__cats { display: flex; flex-wrap: wrap; gap: 8px; }
+.fpanel__cat { padding: 6px 12px; border-radius: 999px; background: rgba(255, 255, 255, 0.04); border: 1px solid var(--border-soft); color: var(--text-2); font-size: 0.8rem; font-weight: 600; transition: all 0.2s ease; }
+.fpanel__cat:hover { border-color: var(--neon); color: var(--neon); }
+.fpanel__cat.is-active { background: var(--grad-main); color: #05060a; border-color: transparent; box-shadow: 0 0 14px rgba(0, 255, 178, 0.4); }
+.fpanel__range { width: 100%; accent-color: var(--neon); cursor: pointer; }
+.fpanel__clear { padding: 10px 18px; font-size: 0.75rem; align-self: flex-start; }
