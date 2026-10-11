@@ -8,7 +8,7 @@ import "./Checkout.css";
 
 const INITIAL_FORM = {
   fullName: "", email: "", phone: "", address: "", city: "", state: "",
-  postalCode: "", country: "United States", cardName: "", cardNumber: "",
+  postalCode: "", country: "India", cardName: "", cardNumber: "",
   expiry: "", cvv: "", upiId: "",
 };
 
@@ -110,7 +110,7 @@ const Checkout = () => {
               <div className="checkout__grid">
                 <div className="checkout__field checkout__field--full">
                   <label className="form-label-nexora" htmlFor="fullName">Full Name *</label>
-                  <input id="fullName" name="fullName" type="text" className={"form-control-nexora" + (errors.fullName ? " error" : "")} value={form.fullName} onChange={handleChange} placeholder="John Doe" />
+                  <input id="fullName" name="fullName" type="text" className={"form-control-nexora" + (errors.fullName ? " error" : "")} value={form.fullName} onChange={handleChange} placeholder="Rahul Sharma" />
                   {errors.fullName && <span className="form-error">{errors.fullName}</span>}
                 </div>
                 <div className="checkout__field">
@@ -120,32 +120,32 @@ const Checkout = () => {
                 </div>
                 <div className="checkout__field">
                   <label className="form-label-nexora" htmlFor="phone">Phone *</label>
-                  <input id="phone" name="phone" type="tel" className={"form-control-nexora" + (errors.phone ? " error" : "")} value={form.phone} onChange={handleChange} placeholder="+1 555 123 4567" />
+                  <input id="phone" name="phone" type="tel" className={"form-control-nexora" + (errors.phone ? " error" : "")} value={form.phone} onChange={handleChange} placeholder="+91 98765 43210" />
                   {errors.phone && <span className="form-error">{errors.phone}</span>}
                 </div>
                 <div className="checkout__field checkout__field--full">
                   <label className="form-label-nexora" htmlFor="address">Address *</label>
-                  <input id="address" name="address" type="text" className={"form-control-nexora" + (errors.address ? " error" : "")} value={form.address} onChange={handleChange} placeholder="123 Gamer Street, Apt 4B" />
+                  <input id="address" name="address" type="text" className={"form-control-nexora" + (errors.address ? " error" : "")} value={form.address} onChange={handleChange} placeholder="12/4 Anna Salai, Near Gemini Flyover" />
                   {errors.address && <span className="form-error">{errors.address}</span>}
                 </div>
                 <div className="checkout__field">
                   <label className="form-label-nexora" htmlFor="city">City *</label>
-                  <input id="city" name="city" type="text" className={"form-control-nexora" + (errors.city ? " error" : "")} value={form.city} onChange={handleChange} placeholder="Los Angeles" />
+                  <input id="city" name="city" type="text" className={"form-control-nexora" + (errors.city ? " error" : "")} value={form.city} onChange={handleChange} placeholder="Chennai" />
                   {errors.city && <span className="form-error">{errors.city}</span>}
                 </div>
                 <div className="checkout__field">
                   <label className="form-label-nexora" htmlFor="state">State / Province *</label>
-                  <input id="state" name="state" type="text" className={"form-control-nexora" + (errors.state ? " error" : "")} value={form.state} onChange={handleChange} placeholder="California" />
+                  <input id="state" name="state" type="text" className={"form-control-nexora" + (errors.state ? " error" : "")} value={form.state} onChange={handleChange} placeholder="Tamil Nadu" />
                   {errors.state && <span className="form-error">{errors.state}</span>}
                 </div>
                 <div className="checkout__field">
                   <label className="form-label-nexora" htmlFor="postalCode">Postal Code *</label>
-                  <input id="postalCode" name="postalCode" type="text" className={"form-control-nexora" + (errors.postalCode ? " error" : "")} value={form.postalCode} onChange={handleChange} placeholder="90001" />
+                  <input id="postalCode" name="postalCode" type="text" className={"form-control-nexora" + (errors.postalCode ? " error" : "")} value={form.postalCode} onChange={handleChange} placeholder="600002" />
                   {errors.postalCode && <span className="form-error">{errors.postalCode}</span>}
                 </div>
                 <div className="checkout__field">
                   <label className="form-label-nexora" htmlFor="country">Country *</label>
-                  <input id="country" name="country" type="text" className={"form-control-nexora" + (errors.country ? " error" : "")} value={form.country} onChange={handleChange} placeholder="United States" />
+                  <input id="country" name="country" type="text" className={"form-control-nexora" + (errors.country ? " error" : "")} value={form.country} onChange={handleChange} placeholder="India" />
                   {errors.country && <span className="form-error">{errors.country}</span>}
                 </div>
               </div>
@@ -175,7 +175,7 @@ const Checkout = () => {
                 <div className="checkout__grid checkout__payFields">
                   <div className="checkout__field checkout__field--full">
                     <label className="form-label-nexora" htmlFor="cardName">Name on Card *</label>
-                    <input id="cardName" name="cardName" type="text" className={"form-control-nexora" + (errors.cardName ? " error" : "")} value={form.cardName} onChange={handleChange} placeholder="John Doe" />
+                    <input id="cardName" name="cardName" type="text" className={"form-control-nexora" + (errors.cardName ? " error" : "")} value={form.cardName} onChange={handleChange} placeholder="Rahul Sharma" />
                     {errors.cardName && <span className="form-error">{errors.cardName}</span>}
                   </div>
                   <div className="checkout__field checkout__field--full">
@@ -200,7 +200,7 @@ const Checkout = () => {
                 <div className="checkout__grid checkout__payFields">
                   <div className="checkout__field checkout__field--full">
                     <label className="form-label-nexora" htmlFor="upiId">UPI ID *</label>
-                    <input id="upiId" name="upiId" type="text" className={"form-control-nexora" + (errors.upiId ? " error" : "")} value={form.upiId} onChange={handleChange} placeholder="yourname@bank" />
+                    <input id="upiId" name="upiId" type="text" className={"form-control-nexora" + (errors.upiId ? " error" : "")} value={form.upiId} onChange={handleChange} placeholder="yourname@upi" />
                     {errors.upiId && <span className="form-error">{errors.upiId}</span>}
                   </div>
                 </div>
