@@ -1,5 +1,5 @@
 /* NEXORA Helpers */
-export const formatPrice = (n) => `$${Number(n || 0).toFixed(2)}`;
+export const formatPrice = (n) => `₹${Number(n || 0).toFixed(2)}`;
 
 export const calcDiscount = (original, price) => {
   if (!original || original <= price) return 0;

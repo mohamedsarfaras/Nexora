@@ -27,7 +27,7 @@ const FilterPanel = ({ activeCategory, onCategoryChange, priceRange, onPriceChan
         </div>
       </div>
       <div className="fpanel__group">
-        <h6>Max Price: <span className="text-neon">${priceRange}</span></h6>
+        <h6>Max Price: <span className="text-neon">₹{priceRange}</span></h6>
         <input type="range" min="0" max={maxPrice} step="10" value={priceRange} onChange={(e) => onPriceChange(Number(e.target.value))} className="fpanel__range" aria-label="Maximum price" />
       </div>
       <div className="fpanel__group">
