@@ -1,70 +1,235 @@
-# Getting Started with Create React App
+# 🎮 NEXORA — Level Up Your Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, premium gaming gear e-commerce **frontend** built with **React.js**, featuring a futuristic dark UI, glassmorphism, neon accents, and a complete cart → checkout → order confirmation flow.
 
-## Available Scripts
+<p align="center">
+  <a href="https://nexora68.netlify.app/">
+    <img src="https://img.shields.io/badge/Live%20Demo-nexora68.netlify.app-00ffb2?style=for-the-badge&logo=netlify&logoColor=black" alt="Live Demo" />
+  </a>
+  <a href="https://github.com/mohamedsarfaras/nexora">
+    <img src="https://img.shields.io/badge/Source-GitHub-a259ff?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18.x-61DAFB?logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/JavaScript-ES6%2B-F7DF1E?logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/React%20Router-6.x-CA4245?logo=reactrouter&logoColor=white" />
+  <img src="https://img.shields.io/badge/Bootstrap-5.x-7952B3?logo=bootstrap&logoColor=white" />
+  <img src="https://img.shields.io/badge/Context%20API-State%20Management-00ffb2" />
+</p>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🔗 Live Demo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+👉 **[Explore NEXORA Live](https://nexora68.netlify.app/)**
 
-### `npm test`
+Test the complete shopping flow: Home → Shop → Product Details → Add to Cart → Apply Coupon → Checkout → Order Confirmation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Features
 
-### `npm run build`
+### 🏠 Home
+- Hero section with the "Level Up Your Game" tagline
+- Seven gaming categories
+- Featured and trending products
+- Promotional discount banner
+- Category-based navigation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🛍️ Shop
+- Search products by name or category
+- Filter by category and price range
+- Sort by featured, price, rating, or name
+- Dynamic result count
+- Empty state and clear filters
+- Responsive product grid
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📦 Product Details
+- Product image gallery with thumbnail switching
+- Product specifications
+- Ratings and review counts
+- Quantity selector
+- Wishlist toggle
+- Related products
+- Product-not-found handling
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🛒 Cart
+- Add, remove, and update product quantities
+- Live subtotal, discount, shipping, and total calculations
+- Coupon codes:
+  - `NEXORA10` — 10% off
+  - `GAMER20` — 20% off
+  - `FREESHIP` — Free shipping
+- Free shipping over $199 (or equivalent configured threshold)
+- Cart persistence using `localStorage`
+- Empty-cart state
 
-### `npm run eject`
+### ❤️ Wishlist
+- Add or remove products from cards and details pages
+- Slide-out wishlist panel
+- Add products directly to the cart
+- Wishlist persistence using `localStorage`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 💳 Checkout
+- Validated customer information form
+- Three payment options:
+  - Credit/debit card
+  - UPI
+  - Cash on Delivery
+- Inline validation messages
+- Order confirmation with generated order ID, item count, total, and estimated delivery
+- Cart automatically clears after a successful simulated order
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🎨 UI / UX
+- Futuristic dark theme with neon green, cyan, and purple accents
+- Glassmorphism cards
+- Smooth hover animations and transitions
+- Toast notifications
+- Responsive design for mobile, tablet, and desktop
+- Accessible labels and image alt text
+- Orbitron and Rajdhani typography
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧰 Tech Stack
 
-## Learn More
+| Layer | Technology |
+|---|---|
+| Framework | React 18 (Create React App) |
+| Language | JavaScript (ES6+) |
+| Routing | React Router DOM v6 |
+| UI Library | Bootstrap 5 and React-Bootstrap |
+| Styling | Custom CSS |
+| State Management | Context API and React Hooks |
+| Persistence | localStorage |
+| Fonts | Google Fonts — Orbitron and Rajdhani |
+| Deployment | Netlify |
+| Version Control | Git and GitHub |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📁 Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```text
+nexora/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Navbar/
+│   │   ├── Footer/
+│   │   ├── Hero/
+│   │   ├── CategoryCard/
+│   │   ├── PromoBanner/
+│   │   ├── ProductCard/
+│   │   ├── ProductGrid/
+│   │   ├── RatingStars/
+│   │   ├── SearchBar/
+│   │   ├── FilterPanel/
+│   │   ├── WishlistOffcanvas/
+│   │   ├── CartItem/
+│   │   ├── OrderSummary/
+│   │   └── Toast/
+│   ├── pages/
+│   │   ├── Home/
+│   │   ├── Shop/
+│   │   ├── ProductDetails/
+│   │   ├── Cart/
+│   │   └── Checkout/
+│   ├── context/
+│   │   └── ShopContext.jsx
+│   ├── data/
+│   │   └── products.js
+│   ├── utils/
+│   │   ├── helpers.js
+│   │   └── validation.js
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+├── package.json
+└── README.md
+```
 
-### Code Splitting
+## 🚀 Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Prerequisites
+- [Node.js 18+](https://nodejs.org/)
+- npm
 
-### Analyzing the Bundle Size
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+# Clone the repository
+git clone https://github.com/mohamedsarfaras/nexora.git
 
-### Making a Progressive Web App
+# Navigate to the project
+cd nexora
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Install dependencies
+npm install
 
-### Advanced Configuration
+# Start the development server
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The application will run at `http://localhost:3000`.
 
-### Deployment
+### Production Build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+npm run build
+```
 
-### `npm run build` fails to minify
+The optimized production build will be generated in the `build/` directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🧪 Test the Shopping Flow
+
+1. Browse products on the Home or Shop page.
+2. Open a product's details.
+3. Add the product to your cart.
+4. Update quantities in the cart.
+5. Apply `NEXORA10`, `GAMER20`, or `FREESHIP`.
+6. Proceed to checkout.
+7. Enter the required customer information and select a payment method.
+8. Complete the simulated order.
+9. View the confirmation page and verify that the cart is cleared.
+
+## 📌 Notes
+
+- **Frontend-only project:** No backend or real payment processing is implemented.
+- Product information is stored locally in `src/data/products.js`.
+- Order confirmation is simulated.
+- Cart and wishlist data persist across page refreshes through `localStorage`.
+- Payment details are not processed by a payment gateway. Never enter real payment information into a demonstration checkout.
+
+## 🌱 Key Learning Highlights
+
+- Managing shared application state using React Context API.
+- Persisting cart and wishlist data using `localStorage`.
+- Building controlled forms and implementing input validation.
+- Implementing client-side routing with React Router.
+- Creating reusable React components.
+- Designing responsive interfaces using Bootstrap and custom CSS.
+- Deploying a React application through Netlify with GitHub integration.
+
+## 🗺️ Future Enhancements
+
+- [ ] Product reviews and ratings
+- [ ] Order history
+- [ ] User authentication
+- [ ] Dark/light theme toggle
+- [ ] Product comparison
+- [ ] Backend integration and database support
+
+## 👤 Author
+
+**Mohamed Sarfaras**
+
+- GitHub: [@mohamedsarfaras](https://github.com/mohamedsarfaras)
+- LinkedIn: [Mohamed Sarfaras](https://www.linkedin.com/in/mohamed-sarfaras-598a322ba/)
+- Live Project: [NEXORA](https://nexora68.netlify.app/)
+
+---
+
+<p align="center">
+  <strong>NEXORA</strong> — <em>Level Up Your Game.</em> 🎮
+</p>
